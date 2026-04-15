@@ -1,1 +1,10 @@
-
+AS_LA_T_1001718	asvspoof2019_la	LA_T_1001718	spoof	train	data\raw\asvspoof2019_la\LA_T_1001718.flac
+AS_LA_T_1000824	asvspoof2019_la	LA_T_1000824	spoof	train	data\raw\asvspoof2019_la\LA_T_1000824.flac
+AS_LA_T_1000648	asvspoof2019_la	LA_T_1000648	spoof	train	data\raw\asvspoof2019_la\LA_T_1000648.flac
+AS_LA_T_1001871	asvspoof2019_la	LA_T_1001871	spoof	train	data\raw\asvspoof2019_la\LA_T_1001871.flac
+AS_LA_T_1001114	asvspoof2019_la	LA_T_1001114	spoof	train	data\raw\asvspoof2019_la\LA_T_1001114.flac
+AS_LA_T_1001169	asvspoof2019_la	LA_T_1001169	spoof	train	data\raw\asvspoof2019_la\LA_T_1001169.flac
+AS_LA_T_1002656	asvspoof2019_la	LA_T_1002656	spoof	train	data\raw\asvspoof2019_la\LA_T_1002656.flac
+AS_LA_T_1001074	asvspoof2019_la	LA_T_1001074	spoof	dev	data\raw\asvspoof2019_la\LA_T_1001074.flac
+AS_LA_T_1000137	asvspoof2019_la	LA_T_1000137	spoof	eval	data\raw\asvspoof2019_la\LA_T_1000137.flac
+AS_LA_T_1000406	asvspoof2019_la	LA_T_1000406	spoof	eval	data\raw\asvspoof2019_la\LA_T_1000406.flac

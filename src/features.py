@@ -26,7 +26,7 @@ MFCC_CONFIG = {
 CQCC_CONFIG = {
     'sr': 16000,
     'fmin': librosa.note_to_hz('C1'),
-    'n_bins': 96,
+    'n_bins': 72,
     'bins_per_octave': 12,
     'hop_length': 160,
     'n_cqcc': 60,
