@@ -1,4 +1,4 @@
-"# IsanSpoof
+# IsanSpoof
 
 ## Overview
 
@@ -83,11 +83,3 @@ src/                    # Source code
 - **ASVspoof 2019 LA**: Logical Access dataset for spoofing detection.
 - **ThaiSpoof**: Thai-language spoofing audio.
 - **Typhoon_Isan**: Isan-region audio data (possibly including typhoon-related speech).
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-[Specify license if applicable]" 
