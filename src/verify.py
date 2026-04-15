@@ -28,4 +28,4 @@ for feat in ['lfcc', 'mfcc', 'cqcc']:
     except Exception as e:
         print(f"[{feat}] ERROR: {e}")
 
-print("\nDone. If shapes are (32, ~400, 180) — Person B sprint 1 is complete.")
+print("\nDone. If shapes are (32, ~400, 180) — Sprint 1 is complete.")
