@@ -1,5 +1,5 @@
 """
-Run this script once Person A has delivered the raw data folders.
+Run this script once IsanSpoof dataset has delivered the raw data folders.
 
 Usage:
     python src/build_protocol.py --data_root data/raw --output protocols/protocol.txt
@@ -32,9 +32,13 @@ def build_protocol(data_root: str, output_path: str):
             print(f"  [skip] {dataset_name} — folder not found")
             continue
 
-        wav_files = sorted(folder.glob('**/*.wav'))
-        random.shuffle(wav_files)
-        n = len(wav_files)
+        # FIX: Search for both .wav and .flac files
+        audio_files = sorted(
+            list(folder.glob('**/*.wav')) + list(folder.glob('**/*.flac'))
+        )
+        
+        random.shuffle(audio_files)
+        n = len(audio_files)
         n_train = int(n * SPLIT_RATIOS[0])
         n_dev   = int(n * SPLIT_RATIOS[1])
         n_eval  = n - n_train - n_dev
@@ -42,7 +46,7 @@ def build_protocol(data_root: str, output_path: str):
         splits = [('train', n_train), ('dev', n_dev), ('eval', n_eval)]
         idx = 0
         for split_name, count in splits:
-            for f in wav_files[idx: idx + count]:
+            for f in audio_files[idx: idx + count]:
                 utt_id = f"{cfg['prefix']}_{f.stem}"
                 entries.append('\t'.join([
                     utt_id, dataset_name, f.stem,
